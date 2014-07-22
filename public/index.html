@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChatApp</title>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="javascripts/chat.js"></script>
+  <script src='javascripts/chat_ui.js'></script>
+</head>
+<body>
+  <h1>BadAss chatApp</h1>
+  <h2>New message</h2>
+  <form>
+    <label for='msg_input'>Message:</label>
+    <input type='text' id='msg_input' name='msg_text' value=''>
+    <input type='submit' value='Send'>
+  </form>
+  
+  <h2>Received messages</h2>
+  <ul id='msg_target'>
+  </ul>
+</body>
+</html>
