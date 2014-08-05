@@ -10,11 +10,21 @@
 <body>
   <h1>BadAss chatApp</h1>
   <h2>New message</h2>
-  <form>
-    <label for='msg_input'>Message:</label>
-    <input type='text' id='msg_input' name='msg_text' value=''>
-    <input type='submit' value='Send'>
-  </form>
+  <div>
+    <input type='text' size='42' disabled='disabled' value='available commands: /nick, /room'>
+    <form id='messageForm'>
+      <label for='msg_input'>Message:</label>
+      <input type='text' id='msg_input' name='msg_text' value=''>
+      <input type='submit' value='Send'>
+    </form>
+  </div>
+<!--  <div style='margin-left: 275px;'>
+    <form id='nicknameForm'>
+      <label for='msg_input'>New Nickname:</label>
+      <input type='text' id='nickname_input' name='nickname_text' value=''>
+      <input type='submit' value='Send'>
+    </form>
+  </div> -->
   
   <h2>Received messages</h2>
   <ul id='msg_target'>
